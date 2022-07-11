@@ -1,0 +1,8 @@
+@import url('_functions.scss');
+$colors: (
+   
+);
+
+@function get-color($color, $value: 0) {
+    @return map-get(map-get($colors, $color), $value);
+}
