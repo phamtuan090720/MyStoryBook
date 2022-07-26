@@ -1,0 +1,88 @@
+.button {
+    font-family: 'Mukta';
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+    border: unset;
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .content__text {}
+
+        .content__icon {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &.button__size--large {
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 12px;
+        line-height: 24px;
+
+        .content {
+            gap: 8px;
+
+            .content__text {
+                width: 59px;
+                height: 24px;
+
+            }
+
+            .content__icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &.button__size--medium {
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 12px;
+        line-height: 24px;
+
+        .content {
+            gap: 4px;
+
+            .content__text {
+                width: 47px;
+                height: 24px;
+
+            }
+        }
+    }
+
+    &.button__size--small {
+        font-size: 13px;
+        line-height: 16px;
+        padding: 8px 12px;
+        border-radius: 8px;
+
+        .content {
+            gap: 4px;
+
+            .content__text {
+                width: 38px;
+                height: 16px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    &.button__theme--primary {
+        background: #3F46D6;
+        color: #FFFFFF;
+
+        &:hover {
+            background: #181C71;
+        }
+
+        &:focus {
+            outline: 4px solid #D5D7F6;
+        }
+    }
+}

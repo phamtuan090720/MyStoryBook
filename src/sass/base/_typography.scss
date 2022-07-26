@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+.text-bold-display {
+    font-size: 61px;
+    font-weight: 700;
+    color: $primary-text;
+    line-height: 80px;
+}
+
+h1.text-bold {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: $primary-text;
+}
+
+h2.text-bold {
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 48px;
+    color: $primary-text;
+}
+
+h3.text-bold {
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 40px;
+    color: $primary-text;
+}
+
+h4.text-bold {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    color: $primary-text;
+}
+
+h5.text-bold {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $primary-text;
+}
