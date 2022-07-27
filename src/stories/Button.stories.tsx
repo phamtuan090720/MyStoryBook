@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Button from 'components/Button/Button';
+import Button from 'components/core/Button/Button';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -22,5 +22,6 @@ Default.args = {
  children:'Button',
  endIcon:'',
  startIcon:'',
- size:'small'
+ size:'small',
+ disabled:true
 };

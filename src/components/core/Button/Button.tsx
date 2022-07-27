@@ -21,6 +21,11 @@ let themeEnum = {
   secondary: `button__theme--secondary`,
   danger: `button__theme--danger`,
 };
+let variantEnum = {
+  text: "button__variant--text",
+  contained: "button__variant--contained",
+  outline: "button__variant--outline",
+};
 const Button = ({
   className = "",
   children,
@@ -28,6 +33,8 @@ const Button = ({
   endIcon,
   size = "small",
   theme = "primary",
+  disabled = false,
+  variant = "text",
 }: ButtonProps) => {
   return (
     <button
@@ -35,8 +42,11 @@ const Button = ({
         className,
         styles["button"],
         styles[sizeClassEnum[size]],
-        styles[themeEnum[theme]],
+        `${variant === "contained" ? styles[themeEnum[theme]] : ""}`,
+        styles[variantEnum[variant]],
+        `${disabled ? styles["button__disabled"] : ""}`,
       ].join(" ")}
+      disabled={disabled}
     >
       <div className={styles["content"]}>
         <span className={styles["content__icon"]}>{startIcon}</span>
