@@ -35,9 +35,11 @@ const Button = ({
   theme = "primary",
   disabled = false,
   variant = "text",
+  onClick = () => {},
 }: ButtonProps) => {
   return (
     <button
+      onClick={onClick}
       className={[
         className,
         styles["button"],
