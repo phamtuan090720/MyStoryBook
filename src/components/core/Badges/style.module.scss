@@ -1,0 +1,89 @@
+.core__badge {
+
+    font-family: 'Mukta';
+    font-style: normal;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: inline-block;
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        .content__text {
+            display: inline-block;
+        }
+    }
+
+    &.badge__theme--grey {
+        background: #E0E0E0;
+
+        &.badge__selected {
+            color: #FFFFFF;
+            background: #767676;
+        }
+
+        &:hover {
+            color: #FFFFFF;
+            background: #767676;
+        }
+    }
+
+    &.badge__theme--primary {
+        background: #D5D7F6;
+
+        &.badge__selected {
+            color: #FFFFFF;
+            background: #3F46D6;
+        }
+
+        &:hover {
+            color: #FFFFFF;
+            background: #3F46D6;
+        }
+    }
+
+    &.badge__theme--secondary {
+        background: #D3F8F4;
+
+        &.badge__selected {
+            color: #1A1A1A;
+            background: #25D9C6;
+        }
+
+        &:hover {
+            color: #1A1A1A;
+            background: #25D9C6;
+        }
+    }
+
+    &.badge__variant--round {
+        border-radius: 24px;
+    }
+
+    &.badge__variant--square {
+        border-radius: 4px;
+    }
+
+    &.badge__size--small {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 4px 8px;
+    }
+
+    &.badge__size--medium {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 8px 16px;
+    }
+
+    &.badge__size--large {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 16px;
+    }
+}
