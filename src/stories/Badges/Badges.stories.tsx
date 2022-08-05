@@ -2,11 +2,9 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import Badge from "components/core/Badges/Badges";
-import { XCircleSmall } from "components/core/Icon";
-
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Example/Badge",
+  title: "Component/Badge",
   component: Badge,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
