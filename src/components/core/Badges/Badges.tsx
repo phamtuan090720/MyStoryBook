@@ -29,7 +29,7 @@ const Badge = ({
   variant = "round",
   className = "",
   size = "small",
-  theme = "grey",
+  theme = "primary",
   label = "Badge Label",
   selected = false,
   startIcon,
